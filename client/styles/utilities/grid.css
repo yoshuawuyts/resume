@@ -145,15 +145,18 @@
 }
 
 /**
- * Base container
+ * Auto sizing
  */
 
-.container-outer {
-  width: 100%;
+.size-auto {
+  flex: 1 1 0;
 }
+
+/**
+ * Base container
+ */
 
 .container {
   margin: auto;
   width: 1030px;
-  height: 100vh;
 }
