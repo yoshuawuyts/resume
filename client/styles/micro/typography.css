@@ -37,10 +37,14 @@ h4,.h4 {
   line-height: 24px;
 }
 .mediumCopy, p, span {
-  font-size: 15px;
+  font-size: 19px;
   line-height: 24px;
 }
 .smallCopy, label {
   font-size: 14px;
   line-height: 18px;
+}
+
+.em {
+  font-style: italic
 }
