@@ -2,5 +2,10 @@ menu {
   width: 220px;
   top:50%;
   align-items: center;
-  margin: 10px 20px 20px 20px;
+  margin: 0 36px 20px 20px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
 }
