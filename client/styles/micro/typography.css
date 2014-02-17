@@ -2,14 +2,20 @@
  * Sizes
  */
 
-body {
-  font-size: 16px;
+a,li,p,body {
+  font-size: 18px;
   line-height: 24px;
+  font-family: "museo-slab",serif;
+  font-style: normal;
+  font-weight: 300;
 }
 h1,
 .h1 {
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 60px;
+  line-height: 66px;
+  font-family: "museo-sans",sans-serif;
+  font-style: normal;
+  font-weight: 900;
 }
 h2,.h2 {
   font-size: 40px;
@@ -22,6 +28,9 @@ h3,.h3 {
 h4,.h4 {
   font-size: 18px;
   line-height: 30px;
+  font-family: "adelle",serif;
+  font-style: normal;
+  font-weight: 800;
 }
 .largeCopy {
   font-size: 17px;
@@ -34,13 +43,4 @@ h4,.h4 {
 .smallCopy, label {
   font-size: 14px;
   line-height: 18px;
-}
-
-/** 
- * Styles
- */
-
-body, p, h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
