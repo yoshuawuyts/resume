@@ -1,6 +1,6 @@
 menu {
-  width: 220px;
-  top:50%;
+  width: 260px;
+  top: 50%;
   align-items: center;
   margin: 0 36px 20px 20px;
 }
@@ -8,4 +8,13 @@ menu {
 .center {
   display: flex;
   align-items: center;
+}
+
+.menu {
+  height: 100vh;
+  position: fixed;
+}
+
+.main-content-wrapper {
+  margin-left: 300px;
 }
