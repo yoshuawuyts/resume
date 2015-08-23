@@ -22,6 +22,7 @@ h2,.h2 {
   line-height: 48px;
 }
 h3,.h3 {
+  margin-left: 4px;
   font-size: 26px;
   line-height: 36px;
 }
@@ -37,6 +38,7 @@ h4,.h4 {
   line-height: 24px;
 }
 .mediumCopy, p, span {
+  margin-left: 4px;
   font-size: 19px;
   line-height: 24px;
 }
