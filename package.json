@@ -13,6 +13,23 @@
     "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js",
     "watch": "npm run start:watch"
   },
+  "browserify": {
+    "transform": [
+      [
+        "sheetify/transform",
+        {
+          "use": [
+            [
+              "sheetify-cssnext",
+              {
+                "sourcemap": false
+              }
+            ]
+          ]
+        }
+      ]
+    ]
+  },
   "dependencies": {
     "bankai": "^2.0.2",
     "bole": "^2.0.0",
@@ -28,7 +45,8 @@
     "sheetify": "^5.0.0",
     "sheetify-cssnext": "^1.0.7",
     "virtual-app": "^3.0.0",
-    "virtual-dom": "^2.1.1"
+    "virtual-dom": "^2.1.1",
+    "yo-yo": "^1.0.1"
   },
   "devDependencies": {
     "bulk": "^2.0.0",

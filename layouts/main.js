@@ -1,14 +1,29 @@
-const hyperx = require('hyperx')
+const sf = require('sheetify')
+const yo = require('yo-yo')
+
+const prefix = sf`
+  :host {
+    display: flex;
+  }
+
+  :host > .sidebar {
+    width: 300px;
+  }
+`
 
 module.exports = template
 
 // main template layout
-// null -> (obj, obj, obj) -> obj
-function template () {
-  return function (params, app, state) {
-    const hx = hyperx(app.h)
-    return hx`
-      <section>hello world</section>
-    `
-  }
+// null -> obj
+function template (sidebar, content) {
+  return yo`
+    <main class=${prefix}>
+      <section class="sidebar">
+        ${sidebar()}
+      </section>
+      <section class="main">
+        ${content()}
+      </section>
+    </main>
+  `
 }
