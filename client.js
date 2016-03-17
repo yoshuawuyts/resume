@@ -6,6 +6,8 @@ const section = require('./elements/section')
 const layout = require('./layouts/main')
 
 sf('css-wipe')
+sf('css-type-base')
+sf('./index.css', { global: true })
 
 const data = [
   [

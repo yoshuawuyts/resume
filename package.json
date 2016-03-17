@@ -34,6 +34,7 @@
     "bankai": "^2.0.2",
     "bole": "^2.0.0",
     "browserify": "^13.0.0",
+    "css-type-base": "^1.0.2",
     "css-wipe": "^4.2.1",
     "http-ndjson": "^3.0.0",
     "hyperxify": "^2.0.1",
