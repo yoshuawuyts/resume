@@ -6,7 +6,7 @@ const prefix = sf`
     display: flex;
   }
 
-  :host > .sidebar {
+  :host > .navigation {
     width: 300px;
   }
 `
@@ -15,11 +15,11 @@ module.exports = template
 
 // main template layout
 // null -> obj
-function template (sidebar, content) {
+function template (navigation, content) {
   return yo`
     <main class=${prefix}>
-      <section class="sidebar">
-        ${sidebar()}
+      <section class="navigation">
+        ${navigation()}
       </section>
       <section class="main">
         ${content()}
