@@ -1,16 +1,26 @@
 const sf = require('sheetify')
 const yo = require('yo-yo')
 
-const email = 'yoshuawuyts@gmail.com'
-const nationality = 'Dutch + Peruvian'
-const birthdate = '25th of December'
-const birthplace = 'Eindhoven'
-const twitter = 'https://twitter.com/yoshuawuyts'
-const github = 'https://github.com/yoshuawuyts'
-
 const prefix = sf`
-  :host > h1, :host > h3 {
-    text-transform: uppercase;
+  :host {
+    margin: 54px 20px 0 20px;
+    margin-top: 54px;
+    width: 100vw;
+  }
+  span {
+    margin-top: 6px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  @media (min-width: 760px) {
+    :host { width: 760px; }
+    nav { flex-direction: row; }
+    span { margin-top: 0; }
   }
 `
 
@@ -19,13 +29,13 @@ module.exports = sidebar
 function sidebar () {
   return yo`
     <section class=${prefix}>
-      <h1>resume</h1>
-      <h3>yoshua wuyts</h3>
-      <a href="mailto:${email}">${email}</a>
-      <p class="nationality">${nationality}</p>
-      <p>Born on the ${birthdate} in ${birthplace}</p>
-      <a href=${twitter}>twitter</a>
-      <a href=${github}>github</a>
+      <nav>
+        <span>Yoshua Wuyts</span>
+        <span><a href="/">home</a></span>
+        <span><a href="/blog">blog</a></span>
+        <span><a href="/twitter">twitter</a></span>
+        <span><a href="/github">github</a></span>
+      </nav>
     </section>
   `
 }

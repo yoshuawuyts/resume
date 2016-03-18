@@ -1,8 +1,27 @@
-body, h1, h2, h3 {
-  font-family: 'MaisonNeue-Mono';
+@font-face {
+  font-family: 'Maison Neue Mono';
+  src: url('assets/maison-mono.woff') format('woff');
+}
+
+*::selection {
+  background: hotpink;
+}
+
+body, h1, h2, h3, pre, code {
+  font-family: 'Maison Neue Mono';
+  font-size: 16px;
+  line-height: 1.4rem;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  text-overflow: wrap;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid;
   color: white;
 }
 
 body {
-  background-color: #1F1F1F;
+  background-color: #1B1B1B;
 }

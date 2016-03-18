@@ -1,12 +1,10 @@
 const sf = require('sheetify')
 
-const sidebar = require('./elements/sidebar')
+const navigation = require('./elements/navigation')
 const content = require('./elements/content')
-const section = require('./elements/section')
 const layout = require('./layouts/main')
 
 sf('css-wipe')
-sf('css-type-base')
 sf('./index.css', { global: true })
 
 const data = [
@@ -42,5 +40,5 @@ const data = [
   ]
 ]
 
-const tree = layout(sidebar, content(section, data))
+const tree = layout(navigation, content)
 document.body.appendChild(tree)

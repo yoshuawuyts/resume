@@ -8,6 +8,7 @@ const bankai = require('bankai')
 const bole = require('bole')
 const http = require('http')
 const path = require('path')
+const fs = require('fs')
 
 const clientp = path.join(__dirname, 'client.js')
 const log = bole('main')
@@ -31,5 +32,9 @@ function createRouter () {
   const router = serverRouter('/404')
   router.on('/', pullHttp.intercept(bankai.html({ css: false })))
   router.on('/bundle.js', pullHttp.intercept(bankai.js(browserify, clientp)))
+  router.on('/assets/maison-mono.woff', pullHttp.intercept(function (req, res) {
+    const route = path.join(__dirname, 'maison-mono.woff')
+    return fs.createReadStream(route)
+  }))
   return router
 }

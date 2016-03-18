@@ -4,10 +4,8 @@ const yo = require('yo-yo')
 const prefix = sf`
   :host {
     display: flex;
-  }
-
-  :host > .navigation {
-    width: 300px;
+    align-items: center;
+    flex-direction: column;
   }
 `
 
@@ -18,12 +16,8 @@ module.exports = template
 function template (navigation, content) {
   return yo`
     <main class=${prefix}>
-      <section class="navigation">
-        ${navigation()}
-      </section>
-      <section class="main">
-        ${content()}
-      </section>
+      ${navigation()}
+      ${content()}
     </main>
   `
 }
