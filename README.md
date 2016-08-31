@@ -1,7 +1,7 @@
-# [yoshuawuyts](yoshuawuyts.com)
+# [yoshuawuyts](https://yoshuawuyts.com)
 
 Hello. Welcome to the source of my homepage.
 
 ## License
 
-MIT © [Yoshua Wuyts](yoshuawuyts.com)
+MIT © [Yoshua Wuyts](https://yoshuawuyts.com)
